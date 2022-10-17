@@ -1,13 +1,16 @@
- //declare bacteria variables here   
+Bacteria maria;
  void setup()   
  {     
- 	//initialize bacteria variables here   
+   size(700, 700);
  }   
  void draw()   
  {    
- 	//move and show the bacteria   
+   maria = new Bacteria();
+   maria.show();
  }  
  class Bacteria    
  {     
- 	//lots of java!   
+   void show(){
+     ellipse(350, 350, 100, 40);
+   }
  }    
