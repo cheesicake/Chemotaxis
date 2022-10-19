@@ -5,12 +5,17 @@ Bacteria maria;
  }   
  void draw()   
  {    
+   rect(310, 310, 50, 50);
    maria = new Bacteria();
    maria.show();
+   maria.move();
  }  
- class Bacteria    
- {     
+ class Bacteria{     
+   int myX;
    void show(){
-     ellipse(350, 350, 100, 40);
+     ellipse(myX, 350, 100, 40);
+   }
+   void move(){
+     myX = myX + (int)(Math.random()*2) - 1;
    }
  }    
